@@ -1,0 +1,137 @@
+:root {
+  --primaryColor: #485563;
+  --secondaryColor: #29323c;
+  --gradient: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --black: #29323c;
+  --black75: #505559;
+  --black50: #737980;
+  --black25: #959da6;
+  --black10: #b8c1cc;
+  --black5: #dae6f2;
+  --white: #f8fafd;
+  --subtleWhite: #f2f6fa;
+  --bluishWhite: #fafcfd;
+  --errorColor: #ff7575;
+  --successColor: #28db22;
+  --inputBoxColor: #dae6f2;
+  --shadow: 0px 2.76726px 2.21381px 0px rgba(0, 0, 0, 0.02),
+    0px 6.6501px 5.32008px 0px rgba(0, 0, 0, 0.03),
+    0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04),
+    0px 22.33631px 17.86905px 0px rgba(0, 0, 0, 0.04),
+    0px 41.77761px 33.42209px 0px rgba(0, 0, 0, 0.05),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+#body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+
+  border-radius: 100px;
+  display: inline-block;
+}
+.primaryColor {
+  background-color: var(--primaryColor);
+}
+.secondaryColor {
+  background-color: var(--secondaryColor);
+}
+.gradient {
+  background-image: var(--gradient);
+}
+.black {
+  background-color: var(--black);
+}
+.black75 {
+  background-color: var(--black75);
+}
+.black50 {
+  background-color: var(--black50);
+}
+.black25 {
+  background-color: var(--black25);
+}
+.black10 {
+  background-color: var(--black10);
+}
+.black5 {
+  background-color: var(--black5);
+}
+.white {
+  background-color: var(--white);
+}
+.bluishWhite {
+  background-color: var(--bluishWhite);
+}
+.subtleWhite {
+  background-color: var(--subtleWhite);
+}
+.errorColor {
+  background-color: var(--errorColor);
+}
+.inputBoxColor {
+  background-color: var(--inputBoxColor);
+}
+h1 {
+  font-size: 4.209rem;
+  font-family: "Open sans";
+}
+h2 {
+  font-size: 3.15rem;
+  font-family: "Open sans";
+}
+h3 {
+  font-size: 2.369rem;
+  font-family: "Open sans";
+}
+h4 {
+  font-size: 1.777rem;
+  font-family: "Open sans";
+}
+h5 {
+  font-size: 1.333rem;
+  font-family: "Open sans";
+}
+h6 {
+  font-size: 1rem;
+  font-family: "Open sans";
+}
+p {
+  /* color: var(--black75); */
+  font-size: 1rem;
+  font-family: "karla";
+}
+.subText {
+  /* color: var(--black75); */
+  font-size: 0.75rem;
+  font-family: "karla";
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.488rem;
+  }
+  h2 {
+    font-size: 2.074rem;
+  }
+  h3 {
+    font-size: 1.728rem;
+  }
+  h4 {
+    font-size: 1.44rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .subText {
+    font-size: 0.833rem;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+    <link rel="stylesheet" href="/css/styles/fonts.css" />
+    <link rel="stylesheet" href="/css/styles/projectStyle.css" />
+    <link rel="stylesheet" href="/css/player.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="logo">
+        <img src="/css/styles/Logo.svg" alt="logo" srcset="" />
+      </div>
+      <div id="nav-container">
+        <a href="#" class="menuItem" id="leaveRoom">
+          <p class="subText" >Leave Room</p>
+        </a>
+      </div>
+    </div>
+    <!-- navbar ends here -->
+    <div id="containerBox">
+      <div id="videoBox">
+        <div id="video">
+          <div id="player"></div>
+        </div>
+        <div id="controllers">
+          <input
+            type="text"
+            name="message"
+            id="messageInput"
+            placeholder="Send Message....."
+          />
+          <button type="button" class="gradient" id="sendButton">Send</button>
+        </div>
+      </div>
+      <div id="chatBox">
+        <div class="messageBox">
+          <div class="topBox">
+            <div class="senderName">Sender's Name</div>
+            <div class="sendingDate">2023-12-24</div>
+          </div>
+          <p class="message">Hello how are you doing</p>
+        </div>
+      </div>
+    </div>
+    <div id="roomId"></div>
+  </body>
+  <script src="/javascript/player.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="/javascript/videoPlayer.js"></script>
+  <script type="module" src="/javascript/socket-client.js"></script>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/styles/fonts.css" />
+    <link rel="stylesheet" href="/css/styles/projectStyle.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="navbar">
+        <div id="logo">
+          <img src="/css/styles/Logo.svg" alt="logo" srcset="" />
+        </div>
+        <div id="nav-container">
+          <a href="#" class="menuItem">
+            <h6>Logout</h6>
+          </a>
+        </div>
+      </div>
+      <!--Navbar ends here  -->
+      <div id="threeBlockOuterContainer">
+        <div class="threeBlock">
+          <form id="userInfoForm">
+            <div>
+              <label for="roomName" class="form-label"
+                ><h6>Room Name</h6></label
+              >
+              <input
+                type="text"
+                name="roomName"
+                class="form-input"
+                id="roomName"
+                required
+              />
+            </div>
+            <div>
+              <label for="roomAccess" class="form-label"
+                ><h6>Room Access</h6></label
+              >
+              <select name="roomAccess" class="form-input" required>
+                <option value="Private">Private</option>
+                <option value="Public">Public</option>
+              </select>
+            </div>
+            <div>
+              <label for="roomExpiration" class="form-label"
+                ><h6>Room Expiration</h6></label
+              >
+              <input
+                type="date"
+                name="roomExpiration"
+                class="form-input"
+                id="datePicker"
+                required
+              />
+            </div>
+            <button type="reset" class="btn gradient"><p>Reset</p></button>
+            <button type="submit" class="btn gradient"><p>Save</p></button>
+          </form>
+        </div>
+        <div class="threeBlock">
+          <form id="generatorForm">
+            <input
+              type="url"
+              name="roomGenerateUrl"
+              id="roomGenerateUrl"
+              placeholder="Enter the url to create room"
+              class="form-input"
+              required
+            />
+            <div class="subText errorMessage" id="userResponseMessage1"></div>
+            <button type="submit" class="btn gradient">
+              <p>Generate Room</p>
+            </button>
+          </form>
+        </div>
+        <div class="threeBlock">
+          <form id="roomJoinerForm">
+            <input
+              type="text"
+              name="joinRoomUrl"
+              id="joinRoomUrl"
+              placeholder="Enter the url / roomId to join room"
+              class="form-input"
+            />
+            <div class="subText errorMessage" id="userResponseMessage2"></div>
+            <button type="submit" class="btn gradient">
+              <p>Search Room</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- here all three blocks end -->
+    <h4 id="resultBlockHeader">Search Result</h4>
+    <div id="resultBlock">
+
+    </div>
+    <!-- here ends the result block of join room url-->
+
+    <!--  -->
+  </body>
+  <script src="/javascript/dashboard.js"></script>
+  <script src="/javascript/dashboard-functionalities/datePicker.js"></script>
+</html>

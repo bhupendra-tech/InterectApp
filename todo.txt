@@ -1,0 +1,12 @@
+// we have removed the jwt token from cookies it work fine ie it displays home page when there are no cookies present and check if cookies are present then is it redirecting the user to dashboard while also authenticating them 
+
+// handle all errors properly we are just displaying message 
+
+// implement forgot your password in login page
+// implement logout in dashboard 
+// implement leave room in player
+
+// in dashboard make user able to select only future date
+
+
+// implement expiration in database

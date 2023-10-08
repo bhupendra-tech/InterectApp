@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/styles/projectStyle.css" />
+    <link rel="stylesheet" href="./css/styles/fonts.css" />
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-card">
+        <form class="form" id="registerForm">
+          <h5 class="form-header">Create new account</h5>
+          <div class="form-row">
+            <label for="username" class="form-label"><h6>Name</h6></label>
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              class="form-input"
+              required
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-row">
+            <label for="userEmail" class="form-label"><h6>Email</h6></label>
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              class="form-input"
+              required
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-row">
+            <label for="userPassword" class="form-label"
+              ><h6>Password</h6></label
+            >
+            <input
+              type="password"
+              name="userPassword"
+              id="userPassword"
+              class="form-input"
+              required
+              placeholder="Minimum length is 8 characters"
+            />
+          </div>
+          <div class="subText errorMessage" id="userResponseMessage"></div>
+          <button type="submit" class="btn gradient">
+            <h6>Continue</h6>
+            <img src="./css/styles/arrow_forward.svg" alt="forward arrow" />
+          </button>
+        </form>
+        <p class="accountSubText">
+          Already have an account? <a href="./login.html">Open it up</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./javascript/register.js"></script>
+</html>

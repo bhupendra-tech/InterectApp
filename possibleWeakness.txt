@@ -1,0 +1,3 @@
+// in dashboard we are generating values by random using Date.now() which hypothetically may generate two same values 
+
+// everytime admin reloads the player page the data is send to the backend

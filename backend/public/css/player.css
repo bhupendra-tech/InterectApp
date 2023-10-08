@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  /* background-color: lightblue; */
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+#nav-container {
+  display: flex;
+  align-items: center;
+}
+.menuItem {
+  text-decoration: none;
+  color: var(--black);
+  margin: 0 1rem;
+  display: inline-block;
+  background-color: var(--errorColor);
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+}
+/* navbar ends here */
+#containerBox {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#video {
+  aspect-ratio: 16/9;
+  max-width: 1080px;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+#video iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+}
+/* video ends here */
+#controllers button {
+  border: none;
+  padding: 1rem 1rem;
+  color: white;
+  width: 14.5vw;
+  border-radius: 1rem;
+  max-width: 200px;
+}
+#controllers input {
+  margin-top: 0.5rem;
+  background-color: var(--inputBoxColor);
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  width: 60vw;
+  max-width: 648px;
+}
+#controllers input:focus {
+  border: none;
+}
+#controllers input::placeholder {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--black25);
+}
+
+/* controllers ends here */
+
+#chatBox {
+  margin-top: 1rem;
+  border: 2px solid var(--black);
+  max-width: 400px;
+  width: 100%;
+  height: 50vw;
+  max-height: 457.5px;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  overflow-y: scroll;
+}
+.messageBox {
+  border: 2px solid var(--black);
+  padding: 0.5rem;
+  font-family: "Open Sans";
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+.senderName {
+  font-weight: 500;
+  font-size: small;
+}
+.topBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.sendingDate {
+  font-family: "karla";
+  font-size: small;
+  font-weight: 500;
+}
+.message {
+  font-size: medium;
+}
+
+/* chatBox ends here */
+
+#roomId {
+  background-color: var(--inputBoxColor);
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0rem;
+  color: var(--black);
+  font-size: small;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="./css/styles/projectStyle.css" />
+    <link rel="stylesheet" href="./css/styles/fonts.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-card">
+        <form class="form" id="loginForm">
+          <h5 class="form-header">Sign in to your account</h5>
+          <div class="form-row">
+            <label for="userEmail" class="form-label"><h6>Email</h6></label>
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              class="form-input"
+              required
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-row">
+            <label for="userPassword" class="form-label"
+              ><h6>Password</h6></label
+            >
+            <input
+              type="password"
+              name="userPassword"
+              id="userPassword"
+              class="form-input"
+              required
+              placeholder="Password"
+            />
+          </div>
+          <div class="subText errorMessage" id="userResponseMessage"></div>
+          <button type="submit" class="btn gradient">
+            <h6>Continue</h6>
+            <img src="./css/styles/arrow_forward.svg" alt="forward arrow" />
+          </button>
+        </form>
+        <p class="accountSubText">
+          Don't have an account? <a href="./register.html">Create One</a>
+        </p>
+        <p class="passwordSubText">
+          <a href="#"> Forgot your password? </a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./javascript//login.js"></script>
+</html>
